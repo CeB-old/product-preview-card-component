@@ -82,6 +82,7 @@ main {
 h1 {
     font-family: 'Fraunces';
     font-size: 32px;
+    color: var(--VeryDarkBlue);
     
 }
 button {
@@ -97,6 +98,10 @@ button {
     line-height: 20px;
     font-family: 'Montserrat';
     
+}
+button:hover{
+    background-color: hsl(152, 42%, 18%);
+    cursor: pointer;
 }
 button img {
     margin-right: 10px;
