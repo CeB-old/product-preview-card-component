@@ -1,0 +1,141 @@
+:root{
+    --DarkCyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --DarkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html, body {
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    height: 450px;
+    width: 600px;
+}
+.image {
+    width: 50%; 
+    height: 100%;
+    
+}
+.desktop{
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+.mobile {
+    display: none;
+}
+.description {
+    background-color: var(--White);
+    height: 100%;
+    width: 50%; 
+    padding: 30px;
+    border-radius: 0px 10px 10px 0px;
+}
+.description p {
+    color: var(--DarkGrayishBlue);
+    margin: 20px 0px;
+    line-height: 1.6rem;
+}
+.object {
+    color: var(--DarkGrayishBlue);
+    margin-bottom: 20px;
+    letter-spacing: 0.2rem;
+}
+.prix {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+.prixAffiche {
+    color: var(--DarkCyan);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Fraunces';
+}
+.prixOrigine {
+    font-size: 14px;
+    color: var(--DarkGrayishBlue);
+    font-family: 'Montserrat';
+    text-decoration:line-through;
+    margin-right: 50px;
+}
+h1 {
+    font-family: 'Fraunces';
+    font-size: 32px;
+    
+}
+button {
+    background-color: var(--DarkCyan);
+    border: none;
+    padding: 15px 10px;
+    color: var(--White);
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
+    font-family: 'Montserrat';
+    
+}
+button img {
+    margin-right: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0 ;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+    main,body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:center;
+        width: 95%;
+        margin-top: 10px;
+    }
+    .image {
+        width: 100%; 
+        
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile{
+        display: block;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .description {
+        width: 100%;
+        padding: 25px;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .prixOrigine {
+        margin-right: 100px;
+    }
+}
